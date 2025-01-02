@@ -43,7 +43,7 @@ copyright = "Nigalya Ponya ©"
     url = "/projects/"
     weight = 2
   [[menu.main]]
-    name = "Library"
+    name = "library"
     url = "/library/"
     weight = 3
   [[menu.main]]

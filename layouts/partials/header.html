@@ -7,6 +7,11 @@
             <b style="font-weight: 800;">{{ .Site.Params.Name }}</b>
             {{ end }}
         </a>
+        <div class="col-sm-2 d-flex flex-row-reverse">
+            {{ range .Site.Params.Social }}
+            <a class="footer-social px-2" {{ with .rel }} rel="{{ . }}" {{ end }} href="{{ .link }}" target="_blank"><i class="{{ .icon }}"></i></a>
+            {{ end }}
+        </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
