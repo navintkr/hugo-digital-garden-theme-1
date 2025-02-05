@@ -5,9 +5,18 @@
         {{ range .Resources.ByType "image" }}
         <div class="award-item">
             <img src="{{ .Permalink }}" alt="{{ .Title }}">
-            <p>{{ .Title }}</p>
+            <p class="awards-title">{{ .Title }}</p>
         </div>
         {{ end }}
     </div>
 </main>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    var titles = document.querySelectorAll('.awards-title');
+    titles.forEach(function(title) {
+        title.textContent = title.textContent.replace('.png', '');
+    });
+});
+</script>
 {{ end }}
