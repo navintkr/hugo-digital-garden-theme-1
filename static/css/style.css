@@ -62,6 +62,99 @@ table td{
   color: var(--grey);
 }
 
+
+/********************* Naveen *********************/
+ /* Custom styles go here */
+ .about-photo {
+  width: 100%;
+  max-width: 300px; /* Adjust the max-width as needed */
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  margin: 0 auto; /* Center the image on smaller screens */
+}
+
+ .ai-image {
+     width: 100%;
+     max-width: 100%;
+     height: auto;
+     display: block;
+     margin: 0 auto;
+ }
+ 
+ .awards-page {
+     padding: 20px;
+ }
+ 
+ .awards-grid {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 20px;
+ }
+ 
+ .award-item {
+     flex: 1 1 calc(50% - 20px);
+     box-sizing: border-box;
+     text-align: center;
+ }
+ 
+ .award-item img {
+     max-width: 100%;
+     height: auto;
+     border-radius: 8px;
+ }
+ 
+ .award-item p {
+     margin-top: 10px;
+     font-size: 1rem;
+     font-weight: bold;
+ }
+ 
+ .certifications-page {
+     padding: 20px;
+ }
+ 
+ .certifications-grid {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 20px;
+ }
+ 
+ .certification-item {
+     flex: 1 1 calc(50% - 20px);
+     box-sizing: border-box;
+     text-align: center;
+ }
+ 
+ .certification-item img {
+     max-width: 100%;
+     height: auto;
+     border-radius: 8px;
+ }
+ 
+ .certification-item p {
+     margin-top: 10px;
+     font-size: 1rem;
+     font-weight: bold;
+ }
+ 
+ /* Media query for smaller screens */
+ @media (max-width: 768px) {
+     .certification-item {
+         flex: 1 1 calc(100% - 20px); /* Ensure one item per row on smaller screens */
+         max-width: calc(100% - 20px);
+     }
+
+     .about-photo {
+      max-width: 100%; /* Ensure the image takes full width on smaller screens */
+    }
+ }
+
+/********************* Naveen *********************/
+
+
+
+
 .card{
   border-radius: 4px;
   background: var(--offwhite);

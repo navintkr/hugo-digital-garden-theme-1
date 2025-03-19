@@ -19,7 +19,7 @@
                     {{ $img := (.Resources.ByType "image").GetMatch "*featured*" }}
                     {{ $img = $img.Fit "500x600" }}
                     {{ with $img }}
-                    <img src="{{ .Permalink }}" alt="{{ $.Title }}">
+                    <img src="{{ .Permalink }}" alt="{{ $.Title }}" class="about-photo">
                     {{ end }}
                     {{ end }}
                 </div>
