@@ -25,5 +25,5 @@
     {{ $title := print .Site.Title " | " .Title }}
     {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
     <title>{{ $title }}</title>
-    <meta name="description" content="{{ if .IsPage }}{{ .Summary }}{{ else }}{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ end }}{{ end }}">
+    <meta name="description" content="Naveen Krishnan, a Solutions Architect at Microsoft, specializes in AI, cloud architecture, and digital transformation. A BCS Fellow and IEEE Senior Member, he designs intelligent systems that drive efficiency and innovation. Passionate about leveraging AI for real-world impact, Naveen aligns business goals with IT strategies to create transformative solutions. As a public speaker, podcast guest, and hackathon judge, he actively contributes to the AI community, sharing insights that inspire and educate. Explore his blogs, talks, and thought leadership at https://www.naveenkrishnan.ai to stay ahead in the AI revolution.">
 </head>
